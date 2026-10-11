@@ -1,5 +1,11 @@
 # Arduino UNO Q: MAX98357A I2S installer
 
+**WARNING:** This operation could potentially break the bootloader. 
+
+If that happens, use a USB-C connection and the Arduino Flash CLI to restore the device.
+
+**Make sure to back up your data before proceeding!**
+
 `install-i2s-max98357a.sh` installs a custom device tree for the MAX98357A I2S amplifier and makes it the default boot configuration on Arduino UNO Q.
 
 Use it to restore the configuration after an Arduino system update. The script rebuilds the custom DTB from the stock DTB on the board and copies the kernel, initrd, and boot parameters from the latest stock boot entry. It does not depend on the kernel version used during the original installation.
